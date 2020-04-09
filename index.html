@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pracica 1</title>
+	<style type="text/css">
+	#menuhorizontal {
+		center;
+		width:100%;
+		margin:0;
+		padding:0;
+		list-style-type:none;
+}
+#menuhorizontal a {
+  
+  text-decoration:none;
+  text-align:center;
+  color:gray;
+  background-color:#FFFFFF;
+  padding:3px 5px;
+  display:block;
+}
+
+#menuhorizontal li {
+  float:left;
+}
+/*
+#menuhorizontal a:hover {
+  background-color:#FFFF00;
+}	
+*/
+.contenedor1{
+  display: flex;
+  flex-direction:column;
+
+  justify-content:flex-start;
+  align-items:stretch;
+  align-content: stretch;
+  align-self: stretch;
+
+
+  width:100%;
+  background-color:#FFFF00;
+  height:200px;
+  color:white;
+}
+.contenedor1 .contenido1{
+	width:33.33%;margin:0px;background-color:#83c4ff;color:#FFFFFF;
+}
+.contenedor1 .contenido2{
+	width:33.33%;margin:0px;background-color:#5db2ff;color:#FFFFFF;
+}
+.contenedor1 .contenido3{
+	width:33.33%;margin:0px;background-color:#83c4ff;color:#FFFFFF;
+}
+
+
+.contenedor2{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  background-color:#FFFFFF;
+}
+.contenedor2 .contenido{
+	height:240px; width:20%;margin:10px;background-color:#FFFFFF;
+}
+
+.contenedor2 .contenido img{
+	height:100px; width:100%;margin:0px;
+}
+
+
+@media all and (max-width: 640px) {
+  
+   .contenedor1{
+    flex-direction:column;
+   }
+
+
+  
+ 
+  }
+
+	</style>
+</head>
+<body>
+
+<ul id="menuhorizontal">
+<li><a href="#"><img src="img/logo.png"></a></li>
+<li><a href="#">Home</a></li>
+<li><a href="#">Departament</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Pages</a></li>
+<li><a href="#">Doctors</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#"><button>Make on Appointment</button></a></li>
+</ul>
+
+<img src="img/banner.png" style="height:600px;width:100%">
+
+
+<div class="contenedor1">
+	<div class="contenido1"></div>
+	<div class="contenido2"></div>
+	<div class="contenido3"></div>
+</div>
+
+<h1>Our Departments</h1>
+<p>Esem spirit temper too say adieus who direct esteem.</p>
+<p>It esteems lucklly or picture placing drawing.</p>
+
+
+<div class="contenedor2">
+	<div class="contenido">
+		<img src="img/img1.png">
+		<h3>Eye Care</h3>
+		<p>Esteem spirit temper too say adleus who direct esteem.</p>
+		<a href="">Learm More</a>
+	</div>
+
+	<div class="contenido">
+		<img src="img/img2.png">
+		<h3>Eye Care</h3>
+		<p>Esteem spirit temper too say adleus who direct esteem.</p>
+		<a href="">Learm More</a>
+	</div>
+
+	<div class="contenido">
+		<img src="img/img3.png">
+		<h3>Eye Care</h3>
+		<p>Esteem spirit temper too say adleus who direct esteem.</p>
+		<a href="">Learm More</a>
+	</div>
+
+	<div class="contenido">
+		<img src="img/img4.png">
+		<h3>Eye Care</h3>
+		<p>Esteem spirit temper too say adleus who direct esteem.</p>
+		<a href="">Learm More</a>
+	</div>
+
+	<div class="contenido">
+		<img src="img/img5.png">
+		<h3>Eye Care</h3>
+		<p>Esteem spirit temper too say adleus who direct esteem.</p>
+		<a href="">Learm More</a>
+	</div>
+
+	<div class="contenido">
+		<img src="img/img6.png">
+		<h3>Eye Care</h3>
+		<p>Esteem spirit temper too say adleus who direct esteem.</p>
+		<a href="">Learm More</a>
+	</div>
+
+</div>
+
+
+
+
+</body>
+</html>
