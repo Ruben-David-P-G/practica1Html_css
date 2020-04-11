@@ -3,11 +3,14 @@
 <head>
 	<title>Pracica 1</title>
 	<style type="text/css">
+	body{
+		background-color: #f4faff;
+		font-family: Arial;
+	}
+
 	#menuhorizontal {
-		center;
+		background-color:#FFFFFF;
 		width:100%;
-		margin:0;
-		padding:0;
 		list-style-type:none;
 }
 #menuhorizontal a {
@@ -15,91 +18,105 @@
   text-decoration:none;
   text-align:center;
   color:gray;
-  background-color:#FFFFFF;
-  padding:3px 5px;
+  padding:15px 10px;
   display:block;
+  font-weight: 600;
+
 }
 
 #menuhorizontal li {
   float:left;
 }
-/*
-#menuhorizontal a:hover {
-  background-color:#FFFF00;
-}	
-*/
+
+.boton{
+  background-color:#2287f6; 
+  border: none;
+  color: white;
+  padding:10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 .contenedor1{
   display: flex;
-  flex-direction:column;
-
+  flex-direction: row;
   justify-content:flex-start;
-  align-items:stretch;
-  align-content: stretch;
-  align-self: stretch;
-
-
+ 
   width:100%;
-  background-color:#FFFF00;
   height:200px;
   color:white;
-}
-.contenedor1 .contenido1{
-	width:33.33%;margin:0px;background-color:#83c4ff;color:#FFFFFF;
-}
-.contenedor1 .contenido2{
-	width:33.33%;margin:0px;background-color:#5db2ff;color:#FFFFFF;
-}
-.contenedor1 .contenido3{
-	width:33.33%;margin:0px;background-color:#83c4ff;color:#FFFFFF;
+
 }
 
+.contenedor1 .contenido1{
+	height:200px;width:100%;margin:0px;background-color:#83c4ff;color:#FFFFFF;
+}
+.contenedor1 .contenido2{
+	height:200px;width:100%;margin:0px;background-color:#5db2ff;color:#FFFFFF;
+}
+.contenedor1 .contenido3{
+	height:200px;width:100%;margin:0px;background-color:#83c4ff;color:#FFFFFF;
+}
+
+@media all and (max-width: 640px) {
+  .contenedor1{
+	display: flex;
+	  flex-direction: column;
+	  height:600px;
+  }
+  .contenedor1 .contenido1{
+	width:100%;
+}
+.contenedor1 .contenido2{
+	width:100%;
+}
+.contenedor1 .contenido3{
+	width:100%;
+}
+}
 
 .contenedor2{
   display: flex;
   flex-wrap: wrap;
   width:100%;
-  background-color:#FFFFFF;
+  background-color: #f4faff;
+  align-content:center;
+  
 }
 .contenedor2 .contenido{
-	height:240px; width:20%;margin:10px;background-color:#FFFFFF;
+	height:240px; width:20%;margin:30px;background-color:#FFFFFF;
 }
 
 .contenedor2 .contenido img{
 	height:100px; width:100%;margin:0px;
 }
-
-
-@media all and (max-width: 640px) {
-  
-   .contenedor1{
-    flex-direction:column;
-   }
-
-
-  
- 
-  }
-
 	</style>
 </head>
 <body>
+<div id="menuhorizontal">
+	<ul>
+		<li><img src="img/logo.png"></li>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Departament</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Pages</a></li>
+		<li><a href="#">Doctors</a></li>
+		<li><a href="#">Contact</a></li>
+		<button class="boton">Make on Appointment</button>
+	</ul>
+</div>
 
-<ul id="menuhorizontal">
-<li><a href="#"><img src="img/logo.png"></a></li>
-<li><a href="#">Home</a></li>
-<li><a href="#">Departament</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Pages</a></li>
-<li><a href="#">Doctors</a></li>
-<li><a href="#">Contact</a></li>
-<li><a href="#"><button>Make on Appointment</button></a></li>
-</ul>
 
 <img src="img/banner.png" style="height:600px;width:100%">
 
 
 <div class="contenedor1">
-	<div class="contenido1"></div>
+	<div class="contenido1">
+
+		<p>Esteem spirit temper too say adleus who direct esteem.</p>
+	</div>
 	<div class="contenido2"></div>
 	<div class="contenido3"></div>
 </div>
