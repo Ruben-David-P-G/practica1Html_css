@@ -1,0 +1,35 @@
+<style>
+    #show,#hide {
+	
+}
+
+#content {
+	display:none;
+  padding:10px;
+  background-color:#f6f6f6;
+  width:200px;
+}
+button#show:focus ~ div#content {
+	display:block;
+}
+
+
+button input#show:checked ~ div#content {
+	display:block;
+}
+
+input#hide:checked ~ div#content {
+	display:none;
+}
+</style>
+<button>
+<input type="radio" id="show" name="group">
+</button>
+<div id="content">
+    <a href="#" class="menu-a">Home</a>
+			<a href="#" class="menu-a">Departament</a>
+			<a href="#" class="menu-a">Pages</a>
+			<a href="#" class="menu-a">Doctors</a>
+			<a href="#" class="menu-a">Contact</a>
+			<button class="boton1">Make on Appointment</button>
+</div>

@@ -1,129 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pracica 1</title>
-	<style type="text/css">
-	body{
-		background-color: #f4faff;
-		font-family: Arial;
-	}
-
-	#menuhorizontal {
-		background-color:#FFFFFF;
-		width:100%;
-		list-style-type:none;
-}
-#menuhorizontal a {
-  
-  text-decoration:none;
-  text-align:center;
-  color:gray;
-  padding:15px 10px;
-  display:block;
-  font-weight: 600;
-
-}
-
-#menuhorizontal li {
-  float:left;
-}
-
-.boton{
-  background-color:#2287f6; 
-  border: none;
-  color: white;
-  padding:10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-.contenedor1{
-  display: flex;
-  flex-direction: row;
-  justify-content:flex-start;
- 
-  width:100%;
-  height:200px;
-  color:white;
-
-}
-
-.contenedor1 .contenido1{
-	height:200px;width:100%;margin:0px;background-color:#83c4ff;color:#FFFFFF;
-}
-.contenedor1 .contenido2{
-	height:200px;width:100%;margin:0px;background-color:#5db2ff;color:#FFFFFF;
-}
-.contenedor1 .contenido3{
-	height:200px;width:100%;margin:0px;background-color:#83c4ff;color:#FFFFFF;
-}
-
-@media all and (max-width: 640px) {
-  .contenedor1{
-	display: flex;
-	  flex-direction: column;
-	  height:600px;
-  }
-  .contenedor1 .contenido1{
-	width:100%;
-}
-.contenedor1 .contenido2{
-	width:100%;
-}
-.contenedor1 .contenido3{
-	width:100%;
-}
-}
-
-.contenedor2{
-  display: flex;
-  flex-wrap: wrap;
-  width:100%;
-  background-color: #f4faff;
-  align-content:center;
-  
-}
-.contenedor2 .contenido{
-	height:240px; width:20%;margin:30px;background-color:#FFFFFF;
-}
-
-.contenedor2 .contenido img{
-	height:100px; width:100%;margin:0px;
-}
-	</style>
+	<title>práctica 1</title>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="style2.css">
 </head>
 <body>
-<div id="menuhorizontal">
-	<ul>
-		<li><img src="img/logo.png"></li>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Departament</a></li>
-		<li><a href="#">Blog</a></li>
-		<li><a href="#">Pages</a></li>
-		<li><a href="#">Doctors</a></li>
-		<li><a href="#">Contact</a></li>
-		<button class="boton">Make on Appointment</button>
-	</ul>
+
+    <div class="menu">
+		<div>
+			<img class="img_logo" src="img/logo.png">
+			<button class="menu-boton"><span class="material-icons">menu</span></button>
+		</div>
+		
+        <a href="#" class="menu-enlace">Home</a>
+        <a href="#" class="menu-enlace">Departament</a>
+        <a href="#" class="menu-enlace">Pages</a>
+        <a href="#" class="menu-enlace">Doctors</a>
+        <a href="#" class="menu-enlace">Contact</a>
+		<button class="boton1">Make on Appointment</button>
+		
+    </div>
+
+
+<div class="contenedor_baner">
+	<!--<img src="img/banner.png" style="height:600px;width:100%">-->
+	<h1 class="text_1">Health Care</h1>
+	<p class="text_2">For Hole Family</p>
+	<p class="text_3">In healthcare sector, service excellence is the facility of the horpital as healthcare service provider to consistently.</p>
+	<button class="boton2">Check Our Services</button>
 </div>
-
-
-<img src="img/banner.png" style="height:600px;width:100%">
 
 
 <div class="contenedor1">
 	<div class="contenido1">
-
-		<p>Esteem spirit temper too say adleus who direct esteem.</p>
+		<span class="material-icons azul_icon">business</span>
+		<h3 class="azul_titulo">Hospitality</h3>
+		<p class="azul_text">Clinical excellence must be the priority for any health care service provider.</p>
+		<button class="azul_boton">Apply For A Bed</button>
 	</div>
-	<div class="contenido2"></div>
-	<div class="contenido3"></div>
+	<div class="contenido2">
+		<span class="material-icons azul_icon">local_phone</span>
+		<h3 class="azul_titulo">Emergency Care</h3>
+		<p class="azul_text">Clinical excellence must be the priority for any health care service provider.</p>
+		<button class="azul_boton">+10 672 356 3567</button>
+	</div>
+	<div class="contenido3">
+		<span class="material-icons azul_icon">add_to_queue</span>
+		<h3 class="azul_titulo">Chamber Service</h3>
+		<p class="azul_text">Clinical excellence must be the priority for any health care service provider.</p>
+		<button class="azul_boton">Make An Appointment</button>
+	</div>
 </div>
 
-<h1>Our Departments</h1>
-<p>Esem spirit temper too say adieus who direct esteem.</p>
-<p>It esteems lucklly or picture placing drawing.</p>
+<h1 class="titulo3">Our De<u>par</u>tments</h1>
+<p class="suptitulo3">Esem spirit temper too say adieus who direct esteem. It esteems lucklly or picture placing drawing.</p>
 
 
 <div class="contenedor2">
@@ -172,7 +104,51 @@
 </div>
 
 
+<div class="footer">
+	<div class="footer-columna1">
+		<img class="img_logo" src="img/logo-small.png">
+		<p>Firmament moming sixt subdue darkness creeping gathered divide.</p>
+		<div class="redes">
+			<a href="#"><img src="img/ico/ico_facebook.png"></a>
+			<a href="#"><img src="img/ico/ico_instagram.png"></a>
+			<a href="#"><img src="img/ico/ico_twitter.png"></a>
+		</div>
+	</div>
+	<div class="footer-columna2">
+		<h3>Departments</h3>
+		<ul style="list-style-type:none;">
+			<li>Eye Care</li>
+			<li>Skin Care</li>
+			<li>Pothology</li>
+			<li>Medicine</li>
+			<li>Dental</li>
+		</ul>
+	</div>
+	<div class="footer-columna3">
+		<h3>Useful Links</h3>
+		<ul>
+			<li>About</li>
+			<li>Blog</li>
+			<li>About</li>
+			<li>Contact</li>
+			<li>Appointment</li>
+		</ul>
+	</div>
+	<div class="footer-columna4">
+		<h3>Address</h3>
+			<p>200, D-block, Green lane USA</p>
+			<p>+10 367 467 8934</p>
+			<p>docmed@contact.com</p>
+		</ul>
+	</div>
+</div>
 
+
+
+<div class="copyright">
+	<p>Copyright &copy;2020 All rights reserved | This template is made whih <span class="material-icons">favorite</span> by </p>
+	<p class="color">Colorlib</p>
+</div>
 
 </body>
 </html>
